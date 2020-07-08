@@ -16,19 +16,20 @@ module.exports =  {
                 $('table.tmain > tbody > tr').each((i, item) => {
                     const torrent = {};
                     if(i !== 0) {
-                        torrent.id = $(item).first().find('a').attr('href').match(/(?<=torrent\/)(\d)*/g)[0]
+                        let id = $(item).first().find('a').attr('href').match(/(?<=torrent\/)(\d)*/g)[0]
                         torrent.name = $(item).first().find('a').text();
                         torrent.date = $(item).find('.tb').text();
                         torrent.seeds = $(item).find('.tul').text();
                         torrent.peers = $(item).find('.tdl').text();
                         torrent.size = $(item).find('.tc').first().text()
-                        torrent.url = `https://www.torrentfunk.com/tor/${torrent.id}.torrent` 
+                        torrent.url = `https://www.torrentfunk.com/tor/${id}.torrent` 
                     }
                     
                     
                     results.push(torrent)
                 })
             }
+            results.shift()
             res.json(results)
         })
  
