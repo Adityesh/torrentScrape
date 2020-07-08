@@ -17,6 +17,8 @@ router.get('/books', controller.getEbooks);
 
 router.get('/software', controller.getSoftware);
 
+router.get('/search', controller.getSearchResults);
+
 
 
 
