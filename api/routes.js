@@ -5,17 +5,17 @@ const controller = require('../controller/controller')
 
 router.get('/', controller.getTop50);
 
-router.get('/movies', controller.getMovies);
+router.get('/api/movies', controller.getMovies);
 
-router.get('/television', controller.getTelevision)
+router.get('/api/television', controller.getTelevision)
 
-router.get('/games', controller.getGames);
+router.get('/api/games', controller.getGames);
 
-router.get('/music', controller.getMusic);
+router.get('/api/music', controller.getMusic);
 
-router.get('/books', controller.getEbooks);
+router.get('/api/books', controller.getEbooks);
 
-router.get('/software', controller.getSoftware);
+router.get('/api/software', controller.getSoftware);
 
 router.get('/search', controller.getSearchResults);
 
