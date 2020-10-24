@@ -1,0 +1,33 @@
+{
+  "name": "torrent_scrape",
+  "version": "0.0.1",
+  "description": "Scrape torrents from torrentfunk.com and download it.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adityesh/torrentScrape.git"
+  },
+  "keywords": [
+    "Torrent",
+    "scrape",
+    "bittorrent",
+    "magnet"
+  ],
+  "author": "Adityesh Mishra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Adityesh/torrentScrape/issues"
+  },
+  "homepage": "https://github.com/Adityesh/torrentScrape#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "request": "^2.88.2"
+  }
+}
